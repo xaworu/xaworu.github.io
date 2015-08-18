@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NOrmativity</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/Dyslexia.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+
+					<h1 id="logo"><a href="index.html"_self style="color:#000000"><img src="images/Logo2.png" /> NOrmativity</a></h1>
+					<h2 id="Dyslexia"> <b> <center> Dyslexia</center> </b> </h2>
+
+
+			</header>
+			
+			<div id="paper1">
+			
+				<b> Symptoms by Age: </b> <br>
+				<label for="slider-fill">Please indicate your age:</label>
+				<input type="range" name="slider-fill" id="slider-fill" value="0" min="0" max="80" data-highlight="true" onchange = "sliderValue()" />
+				
+				<div id="new-slider-fill">Selected age:</div>
+				
+			</div>
+			
+			<div id="paper2">
+				<p> <b>IMPORTANT:</b> A person can display many of these symptoms and not be dyslexic. However, people with dyslexia do often exhibit many of these symptoms. Such symptoms include: </p>
+				<ul>
+					<li> Having trouble pronouncing words </li>
+					<li> Bad handwriting </li>
+					<li> Not succeeding in foreign languages </li>
+					<li> Taking time to recall facts </li>
+					<li> Completing tasks slower than other people </li>
+					<li> Zoning out or getting lost in one's thoughts </li>
+					<li> Having difficulty telling time </li>
+					<li> Being able to do math problems but avoiding or failing at word problems </li>
+					<li> Having a difficult time putting thoughts into words </li> 
+					<li> Confusing left and right </li>
+				</ul>
+			</div>
+			
+			<script>
+				var age;
+				function sliderValue() {
+					age = document.getElementById("slider-fill").value;
+					document.getElementById("new-slider-fill").innerHTML = "Selected age: " + age;
+					
+					if(age == 0) {
+						document.getElementById("paper2").innerHTML = 
+							"<p><b> IMPORTANT:</b> A person can display many of these symptoms and not be dyslexic. However, people with dyslexia <em> do </em> exchibit many of" +
+							" these symptoms. Such symptoms include: </p> <ul> <li> Having trouble pronouncing words </li> <li> Bad handwriting </li> <li> Not succeeding in foreign" +
+							" languages </li> <li> Taking time to recall facts </li> <li> Completing tasks slower than other people </li> <li> Zoning out or getting lost in one's" +
+							" thoughts </li> <li> Having difficulty telling time </li> <li> Being able to do math problems but avoiding or failing at word problems </li> <li> Having" +
+							" a difficult time putting thoughts into words </li> <li> Confusing left and right </li> </ul> </div>";
+					}
+					
+					else if(age > 0 && age < 6) {
+						document.getElementById("paper2").innerHTML = 
+							"<p> Noticeable symptoms at this age include: </p> <ul> <li> Talking later than most children </li> <li> Having more difficulty than other children with" +
+							" pronouncing words </li> <li> Being slower to add new vocabulary words and being unable to recall the right word </li> <li> Having trouble learning the" +
+							" alphabet, numbers, days of the week, colors, shapes, spelling, and writing one's own name </li> <li> Having difficulty reciting common nursery rhymes" +
+							" or rhyming words </li> </ul>";
+					}
+					else if(age > 5 && age < 11) {
+						document.getElementById("paper2").innerHTML = 
+							"<p> Noticeable symptoms at this age include: </p> <ul> <li> Being slow to develop fine motor skills. For example, a child may take longer than others" +
+							" of the same age to learn how to hold a pencil in the writing position, use buttons and zippers, and brush his or her teeth </li> <li> Having difficulty separating" +
+							" sounds in words and blending sounds to make words </li> <li> Having difficulty reading single words that are not surrounded by other words </li> <li>" +
+							" Being slow to learn the connection between letters and sounds </li> <li> Confusing small words such as 'at' and 'to,' or 'does' and 'goes' </li> <li>" +
+							" Making consistent reading and spelling errors </li> </ul>";
+					}
+					
+					else if(age > 9 && age < 14) {
+						document.getElementById("paper2").innerHTML = 
+							"<p> Noticeable symptoms at this age include: </p> <ul> <li> Reading at a lower level than expected </li> <li> Reverseing leter sequences such as 'soiled' for solid, 'left'" +
+							" for 'felt' </li> <li> Being slow to recognize and learn prefixes, suffixes, root words, and other reading and spelling strategies </li> <li> Having difficulty spelling, and" +
+							" he or she may spell the same word differently on the same page </li> <li> Avoiding reading out loud </li> <li> Having trouble with world problems in math </li> <li> Writing" +
+							" with difficulty or having illegible handwriting (His or her pencil grip may be awkward, fistlike, or tight) </li> <li> Avoiding writing </li> <li> Having slow or poor recollection" +
+							" of facts </li> </ul>";
+					}
+					
+					else if(age > 13 && age < 22) {
+						document.getElementById("paper2").innerHTML =
+							"<p> Noticeable symptoms at this age include: </p> <ul> <li> Reading very slowly with many inaccuracies </li> <li> Continuing to spell incorrectly, or" +
+							" frequently spelling the same word differently in a single piece of writing </li> <li> Avoiding tests that require reading and writing, and procrastinating" +
+							" on reading and writing tasks </li> <li> Having trouble preparing summaries and outlines for classes </li> <li> Working intensely on reading and writing tasks </li>" +
+							" Having poor memory skills and completing assigned work more slowly than expected </li> <li> Having an inadequate vocabulary and being unable to store much information" +
+							"from reading </li> </ul>";
+					}
+					
+					else if(age > 21 && age < 51) {
+						document.getElementById("paper2").innerHTML = 
+							"<p> Noticeable symptoms at this age include: </p> <ul> <li> Hiding reading problems </li> <li> Spelling poorly or relying on others to spell for them </li> <li> Avoiding" +
+							" writing or not being able to write at all </li> <li> Being very competent in oral language </li> <li> Relying on memory rather than on reading information </li> <li>" +
+							" Having good 'people' skills and being very good at 'reading' people (intuitive) </li> <li> HAving spatial thinking skills. Examples of professionals who need spatial thinking" +
+							" abilities include engineers, architects, designers, artists, craftspeople, mathematicians, physicists, physicians (especially orthopedists & surgeons), and dentists </li>" +
+							" <li> Often working in a job that is well below their intellectual capacities </li> <li> Having difficulty with planning and organization </li> <li> Being entrepreneurs, although" +
+							" lowered reading skills may result in difficulty maintaining a successful business </li> </ul>";
+					}
+					
+					else {
+						document.getElementById("paper2").innerHTML = "Usually, people don't get diagnosed with learning disabilities by this age. If you suspect, however, that you" +
+						" or someone you know well has dyslexia, please consult a physician about the matter.";
+					}
+				}
+				
+				
+				
+			</script>
+			
+			<div id="paper3">
+			
+				<p><b>Ways To Be Supportive</b></p>
+				<p> 1. Be patient with them. </p>
+				<ul>
+					<li>It is best to be patient with someone who has Dyslexia because it takes them a long time to form sentences and try to get across what they are trying to mean. As well as if they ask you to repeat something over again don’t get frustrated because they are just trying to process what you are saying. </li>
+				</ul>
+				<p>2. Don't judge the on grammar or how they write</p>
+				<ul>
+					<li> It is important for teachers to NOT take points off of test or rough draft papers for grammar. This is because even though the student might be able to understand a sentence (with great difficulty), they may not understand how each comma, or semicolon is used throughout the writing or test. Also do not tease someone who has dyslexia about spelling because it is something they can’t help.</li>
+				</ul>
+				<p>3. Give more in depth explanations(if they ask)</p>
+				<ul>
+					<li>It helps when you tell a person with dyslexia what you want them to do in more depth. This allows them to get a different point of view, as well as the more information about what it is you want them to do.</li>
+				</ul>
+			</div>
+			
+			<div id="paper4">
+				
+				<p><b>Tips to help in the future:</b></p>
+				<ul>
+				<li>1. Stay organized</li>
+				<li>2. Rewrite vocabulary words</li>
+				<li>3. Say words out loud when writing words they don't understand</li>
+				<li>4. Have powerpoints before and or during a presentation</li>
+				<li>5. Read paper or writting assignments out loud</li>
+				</ul>
+			</div>
+			
+			
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
