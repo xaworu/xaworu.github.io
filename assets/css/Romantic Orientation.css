@@ -2873,7 +2873,7 @@
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/Romantic Orientation.jpg");
+		background: url("images/overlay.png"), url("../../images/Romantic orientation.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2919,7 +2919,7 @@
 /* Five */
 
 	#five {
-		background: url("images/overlay.png"), url("../../images/pan.png");
+		background: url("images/overlay.png"), url("../../images/Pan.png");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
